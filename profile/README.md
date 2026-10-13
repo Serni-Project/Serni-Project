@@ -42,3 +42,9 @@ App(Electron)에서 Supabase로 직접 연결하고, 서버 작업은 Edge Funct
 - **S1** — 기본 AI 봇 (채팅·음성)
 - **S2** — 토큰·DB·결제
 - **B1 → B2** — 사업 검증
+
+## 공통 개발 방식
+
+공용 개발 정본은 [policy의 development 색인](https://github.com/Serni-Project/policy/blob/f8ce2daf8ce84b6f1ab7c1288c668e0ceaf425a2/development/README.md)입니다. 소비 저장소는 `.policy`로 이 커밋을 고정하고, 해당 파일을 직접 읽습니다. 사업 조건은 [사업 HTML](https://docs.serni.ai/)과 [에이전트 색인](https://docs.serni.ai/llms.txt)에서 확인합니다.
+
+새 TODO 등록은 밥알이 담당합니다. 작업 중 우려사항은 이슈 댓글로 기록합니다. 완료되면 커밋 해시를 댓글로 남기고 resolve(close)합니다. AI가 산출물과 검사를 확인한 뒤 DONE 라벨을 붙입니다. 세부 기준은 [이슈 작업 단계](https://github.com/Serni-Project/policy/blob/f8ce2daf8ce84b6f1ab7c1288c668e0ceaf425a2/development/governance/issue-workflow.md#프로젝트-보드의-작업-단계)를 따릅니다.
